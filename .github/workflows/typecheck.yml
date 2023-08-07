@@ -8,8 +8,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  eslint:
-    name: Run eslint scanning
+  typecheck:
+    name: Run typecheck scanning
     runs-on: ubuntu-latest
     permissions:
       contents: read
