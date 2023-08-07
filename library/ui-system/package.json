@@ -6,34 +6,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "prepack2": "cat publishConfig.json | json --merge -I -f package.json ",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
     "lint:fix": "pnpm lint --fix"
   },
   "peerDependencies": {
-    "mitt": "3.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.33",
-    "@types/react-dom": "18.0.11",
-    "@typescript-eslint/eslint-plugin": "5.57.1",
-    "@vitejs/plugin-react": "3.1.0",
-    "eslint": "8.38.0",
-    "eslint-config-standard-with-typescript": "34.0.1",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-n": "15.7.0",
-    "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "json": "11.0.0",
-    "path": "0.12.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.4",
-    "vite": "4.2.1",
-    "vite-plugin-dts": "2.2.0"
+    "mitt": "3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "main": "./lib/index.ts"
 }

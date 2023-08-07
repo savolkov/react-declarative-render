@@ -1,0 +1,14 @@
+{
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-system.umd.js",
+  "module": "./dist/ui-system.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-system.es.js",
+      "require": "./dist/ui-system.umd.js"
+    }
+  }
+}

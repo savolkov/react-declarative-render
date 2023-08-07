@@ -16,7 +16,7 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, 'lib/index.ts'),
             name: "ui-system",
-            formats: ['es', 'umd'],
+            formats: ['es', 'umd', 'cjs'],
             fileName: (format) => `ui-system.${format}.js`
         },
         rollupOptions: {
