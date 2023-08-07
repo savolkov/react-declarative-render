@@ -1,0 +1,3 @@
+packages:
+  - 'library/ui-system'
+  - 'demo/ui-system-demo'
