@@ -1,17 +1,17 @@
 {
-  "name": "ui-system-repo",
+  "name": "react-declarative-render-repo",
   "private": true,
   "version": "0.0.1",
   "license": "MIT",
   "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/savolkov/ui-system.git"
+    "url": "https://github.com/savolkov/react-declarative-render.git"
   },
   "bugs": {
-    "url": "https://github.com/savolkov/ui-system/issues"
+    "url": "https://github.com/savolkov/react-declarative-render/issues"
   },
-  "homepage": "https://github.com/savolkov/ui-system",
+  "homepage": "https://github.com/savolkov/react-declarative-render",
   "keywords": ["ui", "react", "portal", "render", "declarative", "ui-system"],
   "scripts": {
     "typecheck": "pnpm run -r typecheck",

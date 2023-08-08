@@ -19,9 +19,9 @@ jobs:
         run: npm i -g pnpm@8.6.12
 
       - name: Install dependencies and build 🔧
-        run: pnpm i --frozen-lockfile && cd library/ui-system && pnpm prepack && pnpm build
+        run: pnpm i --frozen-lockfile && cd library/react-declarative-render && pnpm prepack && pnpm build
 
       - name: Publish package on NPM 📦
-        run: cd library/ui-system && pnpm publish --no-git-checks
+        run: cd library/react-declarative-render && pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}

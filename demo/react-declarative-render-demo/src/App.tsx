@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useCallback } from 'react'
-import { type UISystemService, UISystemSlot } from 'ui-system'
+import { type UISystemService, UISystemSlot } from 'react-declarative-render'
 import { SlotsEnum } from './components/SlotsEnum'
 import { Clicker } from './components/Clicker'
 import { Logo } from './components/Logo'

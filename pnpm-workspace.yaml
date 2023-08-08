@@ -1,3 +1,3 @@
 packages:
-  - 'library/ui-system'
-  - 'demo/ui-system-demo'
+  - 'library/react-declarative-render'
+  - 'demo/react-declarative-render-demo'

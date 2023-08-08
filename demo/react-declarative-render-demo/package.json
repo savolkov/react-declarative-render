@@ -1,23 +1,23 @@
 {
-  "name": "ui-system",
-  "description": "A lightweight library for declarative render of React components.",
+  "name": "react-declarative-render-demo",
+  "description": "A demo application demonstrating `react-declarative-render` library in action.",
+  "private": true,
   "version": "0.0.1",
   "license": "MIT",
   "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/savolkov/ui-system.git"
+    "url": "https://github.com/savolkov/react-declarative-render.git"
   },
   "bugs": {
-    "url": "https://github.com/savolkov/ui-system/issues"
+    "url": "https://github.com/savolkov/react-declarative-render/issues"
   },
-  "homepage": "https://github.com/savolkov/ui-system",
+  "homepage": "https://github.com/savolkov/react-declarative-render",
   "keywords": ["ui", "react", "portal", "render", "declarative", "ui-system"],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "prepack": "mv package.json rawPackage.json && json -f rawPackage.json -I -e \"delete this.devDependencies; delete this.dependencies\" && cat rawPackage.json publishConfig.json | json --merge > package.json" ,
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
@@ -25,12 +25,8 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "peerDependencies": {
-    "mitt": "3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "18.2.0",
+    "react-declarative-render": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "18.15.11",
@@ -45,12 +41,7 @@
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "json": "11.0.0",
-    "path": "0.12.7",
     "typescript": "5.0.4",
-    "vite": "4.2.1",
-    "vite-plugin-dts": "2.2.0"
-  },
-
-  "main": "./lib/index.ts"
+    "vite": "4.2.1"
+  }
 }
