@@ -21,7 +21,7 @@ export class UISystemService<TComponentsProps extends TComponentsPropsConstraint
 
   private mountUISystem (params?: IMountParams): void {
     const root = document.createElement('div')
-    root.id = params?.rootElementName ?? 'ui-system-root'
+    root.id = params?.rootElementName ?? 'react-declarative-render-root'
     document.body.append(root)
 
     const reactRoot = ReactDOM.createRoot(root)

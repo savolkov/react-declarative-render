@@ -15,9 +15,9 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             entry: resolve(__dirname, 'lib/index.ts'),
-            name: "ui-system",
+            name: "react-declarative-render",
             formats: ['es', 'umd', 'cjs'],
-            fileName: (format) => `ui-system.${format}.js`
+            fileName: (format) => `react-declarative-render.${format}.js`
         },
         rollupOptions: {
             external: ['react', 'react-dom'],

@@ -1,0 +1,14 @@
+{
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-declarative-render.umd.js",
+  "module": "./dist/react-declarative-render.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-declarative-render.es.js",
+      "require": "./dist/react-declarative-render.umd.js"
+    }
+  }
+}
