@@ -12,7 +12,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        sourcemap: true,
+        sourcemap: false,
         lib: {
             entry: resolve(__dirname, 'lib/index.ts'),
             name: "react-declarative-render",
