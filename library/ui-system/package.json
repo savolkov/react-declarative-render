@@ -1,18 +1,36 @@
 {
   "name": "ui-system",
+  "description": "A lightweight library for declarative render of React components.",
   "version": "0.0.1",
+  "license": "MIT",
+  "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savolkov/ui-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/savolkov/ui-system/issues"
+  },
+  "homepage": "https://github.com/savolkov/ui-system",
+  "keywords": ["ui", "react", "portal", "render", "declarative", "ui-system"],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "prepack": "mv package.json rawPackage.json && json -f rawPackage.json -I -e \"delete this.devDependencies; delete this.dependencies\" && cat rawPackage.json publishConfig.json | json --merge > package.json" ,
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
     "lint:fix": "pnpm lint --fix"
   },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "peerDependencies": {
-    "mitt": "3.0.0"
+    "mitt": "3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.15.11",
@@ -29,11 +47,10 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "json": "11.0.0",
     "path": "0.12.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "typescript": "5.0.4",
     "vite": "4.2.1",
     "vite-plugin-dts": "2.2.0"
   },
+
   "main": "./lib/index.ts"
 }

@@ -2,6 +2,17 @@
   "name": "ui-system-repo",
   "private": true,
   "version": "0.0.1",
+  "license": "MIT",
+  "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savolkov/ui-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/savolkov/ui-system/issues"
+  },
+  "homepage": "https://github.com/savolkov/ui-system",
+  "keywords": ["ui", "react", "portal", "render", "declarative", "ui-system"],
   "scripts": {
     "typecheck": "pnpm run -r typecheck",
     "lint": "pnpm run -r lint",
