@@ -2,7 +2,7 @@
   "name": "react-declarative-render-demo",
   "description": "A demo application demonstrating `react-declarative-render` library in action.",
   "private": true,
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "license": "MIT",
   "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
   "repository": {

@@ -1,7 +1,7 @@
 {
   "name": "react-declarative-render",
   "description": "A lightweight library for declarative render of React components.",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "license": "MIT",
   "author": "Semyon Volkov <volkovsema+github@gmail.com> (https://savolkov.tech)",
   "repository": {
